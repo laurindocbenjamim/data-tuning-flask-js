@@ -1,0 +1,45 @@
+flask
+Flask-Cors
+gunicorn
+matplotlib
+pymysql
+#mysql-connector-python
+psycopg2
+#psycopg2-binary
+requests
+seaborn
+#flask_sqlalchemy
+pyjwt
+pyotp
+qrcode
+Flask-Mail
+flask-login
+flask-bcrypt
+Flask-SQLAlchemy
+flask-migrate
+Flask-WTF
+bootstrap-flask
+Flask-Caching
+flask-talisman
+pylint
+pytest
+coverage
+hvac #install vault
+pycryptodome
+geocoder
+sentry-sdk[flask]
+# pip install --upgrade sentry-sdk[flask]
+#
+bs4
+reportlab
+
+# AI libraries
+ibm-watsonx-ai
+ibm-watson>=6.1.0
+
+#pip install --upgrade openai
+openai
+#pip install --upgrade pygame
+pygame
+#!pip install --upgrade PyPDF2[full]
+PyPDF2[full]

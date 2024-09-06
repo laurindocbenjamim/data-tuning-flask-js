@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        .error-container {
+            text-align: center;
+        }
+        .error-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        .home-button {
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .error-message {
+                font-size: 1.2rem;
+            }
+        }
+        @media (max-width: 576px) {
+            .error-message {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <img src="https://th.bing.com/th/id/OIP.QJRO-Za9vZdcIPDYyO37IAHaD3?w=298&h=180&c=7&r=0&o=5&pid=1.7" alt="500 Error" class="error-image">
+        <div class="error-message">
+            <h1>500 Internal Server Error</h1>
+            <p>Oops! Something went wrong on our end. Please try again later.</p>
+            <a href="/" class="btn btn-primary home-button">Go to Home Page</a>
+        </div>
+    </div>
+</body>
+</html>
