@@ -73,7 +73,7 @@ def error_handlers_view(app):
         error_code=e.code
         error_description = e.name
         message = "Oops! Something went wrong on our end. Please try again later."
-        image=image='https://github.com/laurindocbenjamim/dev-images/blob/main/400.jpg?raw=true'
+        image=image='https://www.techquintal.com/wp-content/uploads/2022/08/400-Bad-Request-Error.jpg'
         #resp = make_response(render_template('errors/400.html', message=f"{e.code} -{e.name}. Unauthorized 
         #                                     {e.description}", image=image, error_code=error_code), 400)
         resp = make_response(render_template('errors/error.html', title=title, message=message, error_description=error_description, 

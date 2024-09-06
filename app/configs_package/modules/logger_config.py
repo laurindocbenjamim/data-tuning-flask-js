@@ -6,22 +6,19 @@ import os
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-log_path = 'app/static/logs/'
-log_file = 'logs.log'
 
 # Check if the directory exists, if not, create it
-if not os.path.exists(log_path):
-    os.makedirs(log_path)
+if not os.path.exists('app/static/logs/'):
+    os.makedirs('app/static/logs/')
 
-log_path = log_path + "/"+log_file
 # check if the file exist, if not, create it
-if not os.path.exists(log_path):
+if not os.path.exists('app/static/logs/logs.log'):
     # Create the file
-    with open(log_path, 'w') as file:
+    with open('app/static/logs/logs.log', 'w') as file:
         file.write('# THIS IS A LOG FILE \n\n\n')
 
 # Create a file handler
-file_handler = logging.FileHandler(log_path)
+file_handler = logging.FileHandler('app/static/logs/logs.log')
 file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 file_handler.setFormatter(file_formatter)
 

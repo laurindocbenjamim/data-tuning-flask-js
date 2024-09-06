@@ -91,7 +91,7 @@ def load_routes(app, db, login_manager):
                     session['user_token'] = token.token          
 
         #return jsonify({"user": session['user_token']})
-        logs = "app/static/logs/logs.log"
+        logs = 'app/static/logs/logs.log'
         log_data =''
         with open(logs, 'r') as data:
             log_data = data.read()
