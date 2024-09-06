@@ -13,12 +13,12 @@ log_file = 'logs.log'
 if not os.path.exists(log_path):
     os.makedirs(log_path)
 
-log_path = f'{log_path}/{log_file}'
+log_path = log_path + "/"+log_file
 # check if the file exist, if not, create it
 if not os.path.exists(log_path):
     # Create the file
     with open(log_path, 'w') as file:
-        file.write('# THIS IS A LOG FILE \n')
+        file.write('# THIS IS A LOG FILE \n\n\n')
 
 # Create a file handler
 file_handler = logging.FileHandler(log_path)
